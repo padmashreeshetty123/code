@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body{
+            margin:0px;
+            background:url("white_bg.webp");
+            TEXT-ALIGN:CENTER;
+        }
+        nav{
+            background:#eeeded;
+            position:sticky;
+            top:0px;
+            z-index:1;
+        }
+        .navbar{
+            letter-spacing:1px;
+            display:flex;
+            justify-content:end;
+            align-items:center;
+            margin-right:50px;
+            
+        }
+        .flex-item{
+            font-size:20px;
+            font-weight:300;
+            margin:6px;
+            padding:20px;
+        }
+        .flex-item a{
+            font-family:sans-serif;
+            text-decoration:none;
+            color:black;
+        }
+        .flex-item:hover{
+            background:yellow;
+        }
+       .event_list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+    margin: auto;
+    
+    position: relative;
+    
+    justify-content: center;
+}
+.event_list_item {
+    margin: 30px;
+    padding:20px;
+    background-color:white;
+    box-shadow:2px ;
+    max-width: 25%;
+}
+.event_list_item img{
+    width:100%;
+}
+        </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav">
+        <img src="images.png" alt="" style="width:150px; height:60px; position:absolute; top:7px; left:12px;">
+        <div CLASS="navbar">
+        <div class="flex-item">
+            <a href="/">HOME</a>
+        </div>
+        <div class="flex-item">
+            <a href="event">EVENTS</a>
+        </div>
+        <div class="flex-item"><a href="register">REGISTER</a></div>
+        <div class="flex-item"><a href="about">ABOUT</a></div>
+        </div>
+    </div>
+    </nav>
+    <h1>EVENTS LIST</h1>
+    <div class="event_list">
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    <div class="event_list_item">
+        <img src="card.jpg" alt="">
+        <h1>event 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+    </div>
+    </div>
+</body>
+</html>
