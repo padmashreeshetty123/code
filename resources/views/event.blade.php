@@ -37,7 +37,7 @@
         }
         .flex-item:hover{
             background:yellow;
-        }
+                }
        .event_list {
     display: flex;
     flex-wrap: wrap;
@@ -79,36 +79,18 @@
     </nav>
     <h1>EVENTS LIST</h1>
     <div class="event_list">
+    @foreach($data as $key)
     <div class="event_list_item">
         <img src="card.jpg" alt="">
-        <h1>event 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
+        <h1>{{$key->title}}</h1>
+        <p>{{$key->description}}</p>
     </div>
-    <div class="event_list_item">
-        <img src="card.jpg" alt="">
-        <h1>event 2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
-    </div>
-    <div class="event_list_item">
-        <img src="card.jpg" alt="">
-        <h1>event 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
-    </div>
-    <div class="event_list_item">
-        <img src="card.jpg" alt="">
-        <h1>event 4</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
-    </div>
-    <div class="event_list_item">
-        <img src="card.jpg" alt="">
-        <h1>event 5</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
-    </div>
-    <div class="event_list_item">
-        <img src="card.jpg" alt="">
-        <h1>event 6</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid quisquam, impedit, veniam soluta mollitia ex nemo quidem reiciendis eveniet qui accusantium minus tempore, aspernatur provident harum. Iste tempore qui incidunt, quo quaerat in quisquam veniam quibusdam dicta vero sit voluptas facere veritatis eos at corrupti eligendi eum inventore aperiam, vel doloremque, tempora distinctio? Dignissimos temporibus harum in beatae natus!</p>
-    </div>
+    @endforeach
+   
+    
+    
+    
+   
     </div>
 </body>
 </html>

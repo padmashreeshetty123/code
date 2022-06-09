@@ -25,7 +25,8 @@ Route::get('register', function () {
     return view('register');
 });
 Route::get('event', function () {
-    return view('event');
+    $data=DB::table('news')->get();
+    return view('event',['data'=>$data]);
 });
 Route::get('about', function () {
     return view('about');
