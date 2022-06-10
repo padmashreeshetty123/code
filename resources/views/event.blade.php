@@ -40,7 +40,7 @@
                 }
        .event_list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align:left;
     margin: auto;
     
@@ -53,7 +53,7 @@
     padding:20px;
     background-color:white;
     box-shadow:2px ;
-    max-width: 25%;
+    width: 30vw;
 }
 .event_list_item img{
     width:100%;
@@ -81,11 +81,13 @@
     <div class="event_list">
     @foreach($data as $key)
     <div class="event_list_item">
-        <img src="card.jpg" alt="">
+        <img src="storage/images/{{$key->path}}" alt="">
+       
         <h1>{{$key->title}}</h1>
         <p>{{$key->description}}</p>
     </div>
     @endforeach
+    
    
     
     

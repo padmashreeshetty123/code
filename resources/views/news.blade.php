@@ -66,12 +66,14 @@ button{
 </div>
 </div>
 <div class="form">
-<form action="database2" method="post">
+<form action="database2" method="post" enctype="multipart/form-data">
         @csrf
         TITLE:
-        <input type="text" name="title"">
+        <input type="text" name="title">
         DESCRIPTION: 
         <input type="textarea" id="description" name="description"></input><br>
+        CHOOSE A PICTURE:
+        <input type="file" name="file" id="file"><br>
          <button type="submit">SUBMIT</button>
          <button type="reset">RESET</button>
     </form>

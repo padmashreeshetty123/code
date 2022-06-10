@@ -9,15 +9,21 @@ class database2 extends Controller
     //
     function send2(Request $req){
        $data= $req->input();
+       
        $req->validate([
            'title'=>'required',
-           'description'=>'required'
+           'description'=>'required',
+           'file'=>'required'
        ]);
        $title=$data['title'];
     
        $des=$data['description'];
+       
+        $pat=$req->file('file')->getClientOriginalName();
     
-       db::select("insert into news values('$title','$des')");
+       $req->file('file')->storeAs('public/images/',$pat);
+
+       db::select("insert into news values('$title','$des','$pat')");
        return redirect('/');
        
     }
