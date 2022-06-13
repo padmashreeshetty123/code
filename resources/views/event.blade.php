@@ -179,10 +179,10 @@ input:nth-of-type(5):checked ~ main#carousel {
     
     
    
-    </div>
-    <label class="b1" for="b">></label>
+
     
-  <input type="radio" name="position" />
+    
+  
   <input type="radio" name="position" />
   <input type="radio" name="position" checked />
   <input type="radio" name="position" />
@@ -195,6 +195,7 @@ input:nth-of-type(5):checked ~ main#carousel {
         <h1>{{$key->title}}</h1>
         <p>{{$key->description}}</p>
     </div>
+    <input type="radio" name="position" />
     @endforeach
     <main>
 </body>
