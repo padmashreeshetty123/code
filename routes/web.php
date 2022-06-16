@@ -26,7 +26,7 @@ Route::get('register', function () {
 });
 Route::get('event', function () {
     $data=DB::table('news')->get();
-    return view('event',['data'=>$data]);
+    return view('event',['data'=>$data,'count'=>0]);
 });
 Route::get('about', function () {
     return view('about');
@@ -39,6 +39,10 @@ Route::get('dashboard', function () {
 });
 Route::get('news', function () {
     return view('news');
+});
+Route::get('event2', function () {
+    $data=DB::table('news')->get();
+    return view('event2',['data'=>$data]);
 });
 
 Route::post('delete', [delete::class, 'del']);
