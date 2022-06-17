@@ -78,7 +78,7 @@
             <a href="/">HOME</a>
         </div>
         <div class="flex-item">
-            <a href="event">EVENTS</a>
+            <a href="event1">EVENTS</a>
         </div>
         <div class="flex-item"><a href="register">REGISTER</a></div>
         <div class="flex-item"><a href="about">ABOUT</a></div>

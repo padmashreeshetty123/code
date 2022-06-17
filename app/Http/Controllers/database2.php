@@ -24,7 +24,7 @@ class database2 extends Controller
        $req->file('file')->storeAs('public/images/',$pat);
 
        db::select("insert into news values('$title','$des','$pat')");
-       return redirect('/');
+       return redirect('/event1');
        
     }
 }

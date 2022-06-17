@@ -80,66 +80,7 @@ pointer-events:none;
 
 
 
-       .main{
-    display: flex;
-    
-    text-align:left;
-    margin: auto;
-    
 
-    
-    height:55%;
-    justify-content: center;
-}
-.event_list_item {
-    text-align:center;
-    color:white;
-    margin: 30px;
-    padding:20px;
-    background-color:white;
-    box-shadow:2px ;
-    min-width: 300px;
-    height:25vw;
-    border-radius:50px;
-    border:0.7px solid white;
-    background-color:transparent;
-    backdrop-filter:blur(8px);
-}
-.event_list_item h1{
-    margin-top:20px;
-}
-.event_list_item p{
-    margin-top:30px;
-}
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-.event_list{
-    display:flex;
-    width:80%;
-    margin :auto;
-    overflow-x:scroll;
-}
-.event_list_item img{
-    width:100%;
-    height:40%;
-    border-radius:40px;
-
-}
-
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: transparent;
-}
 
         nav{
 
@@ -148,7 +89,7 @@ pointer-events:none;
         right:0px;
         z-index:10001;
     
-            
+        
             
         
         }
@@ -169,6 +110,7 @@ pointer-events:none;
             border-radius:50px;
             border:1px solid white;
             margin-left:30px;
+    
         }
         .flex-item a{
             font-family:sans-serif;
@@ -202,8 +144,8 @@ pointer-events:none;
         <img src="road.png" alt="" id="road">
         <h1 id="text">EVENTS</h1>
     </section>
-    <h1 id="text2" data-aos="fade-up" data-aos-duration="2000" >EVENT LIST</h1>
-
+    <!-- <h1 id="text2" data-aos="fade-up" data-aos-duration="2000" >EVENT LIST</h1> -->
+<!-- 
     <div class="event_list" data-aos="fade-up" data-aos-duration="2500">
         @foreach($data as $key)
         <div class="main">
@@ -214,7 +156,7 @@ pointer-events:none;
     </div>
    @endforeach
 </div>
-    </div>
+    </div> -->
     <script>
         let bg=document.getElementById("bg");
         let moon=document.getElementById("moon");

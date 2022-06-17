@@ -73,7 +73,7 @@ button{
         DESCRIPTION: 
         <input type="textarea" id="description" name="description"></input><br>
         CHOOSE A PICTURE:
-        <input type="file" name="file" id="file"><br>
+        <input type="file" name="file" id="file" style="height:0%"><br>
          <button type="submit">SUBMIT</button>
          <button type="reset">RESET</button>
     </form>

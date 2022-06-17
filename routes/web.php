@@ -44,6 +44,10 @@ Route::get('event2', function () {
     $data=DB::table('news')->get();
     return view('event2',['data'=>$data]);
 });
+Route::get('event1', function () {
+    $data=DB::table('news')->get();
+    return view('event1',['data'=>$data,'value'=>8000]);
+});
 
 Route::post('delete', [delete::class, 'del']);
 Route::post('database', [database::class, 'send']);
