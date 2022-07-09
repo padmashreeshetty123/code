@@ -117,7 +117,7 @@ footer{
     </style>
 </head>
 <body>
-    
+    <!--actual event1 used in the code-->
     <nav>
     <div class="nav">
         <img src="logo2.png" alt="" style="width:55px; height:40px; position:absolute; top:7px; left:12px; border-radius:150px;">
